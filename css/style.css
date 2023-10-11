@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .clip-bg-blend {
+        display: block !important;
+        mix-blend-mode: color-dodge;
+        z-index: 1;
+        pointer-events: none;
+        opacity: .3;
+    }
+}
+
+.youtube-ps {
+    height: 1080px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 100%; */
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.head {
+    background-image: url(../images/bg-13.png);
+    background-color: #000;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+@media (max-width: 425px) {
+    .king {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 375px) {
+    .king {
+        max-width: 75%;
+    }
+}
+@media (max-width: 320px) {
+    .king {
+        max-width: 100%;
+    }
+}
